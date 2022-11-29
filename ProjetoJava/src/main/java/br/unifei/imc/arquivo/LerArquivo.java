@@ -1,6 +1,6 @@
-package arquivo;
+package br.unifei.imc.arquivo;
 
-import jogos.Games;
+import br.unifei.imc.jogos.Games;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 

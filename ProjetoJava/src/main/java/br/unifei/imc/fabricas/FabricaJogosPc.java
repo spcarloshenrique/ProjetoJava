@@ -1,7 +1,7 @@
-package fabricas;
+package br.unifei.imc.fabricas;
 
-import jogos.Jogo;
-import jogos.JogoPc;
+import br.unifei.imc.jogos.Jogo;
+import br.unifei.imc.jogos.JogoPc;
 
 public class FabricaJogosPc implements FabricaDeJogo{
     @Override

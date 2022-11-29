@@ -1,6 +1,6 @@
-package arquivo;
-;
-import jogos.Games;
+package br.unifei.imc.arquivo;
+
+import br.unifei.imc.jogos.Games;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

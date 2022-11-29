@@ -1,7 +1,9 @@
-package vendas;
+package br.unifei.imc.vendas;
 
-import arquivo.LerArquivo;
-import jogos.*;
+import br.unifei.imc.arquivo.LerArquivo;
+//import br.unifei.imc.jogos.Games;
+//import br.unifei.imc.jogos.JogoPc;
+import br.unifei.imc.jogos.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +14,7 @@ public class VendaJogos {
     public List<Games> carinho(){
         List<Games> jogos = new ArrayList<>();
 
-        List<Games> jogosDesponiveis = new ArrayList<>();
+        List<Games> jogosDesponiveis;
         int op = 0;
 
         Scanner myObj = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package jogos;
+package br.unifei.imc.jogos;
 
 import java.util.List;
 

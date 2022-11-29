@@ -1,6 +1,6 @@
-package vendas;
+package br.unifei.imc.vendas;
 
-import jogos.Games;
+import br.unifei.imc.jogos.Games;
 
 import java.util.ArrayList;
 import java.util.List;

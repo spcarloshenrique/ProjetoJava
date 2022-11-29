@@ -1,6 +1,6 @@
-package fabricas;
+package br.unifei.imc.fabricas;
 
-import jogos.Jogo;
+import br.unifei.imc.jogos.Jogo;
 
 public interface FabricaDeJogo {
 

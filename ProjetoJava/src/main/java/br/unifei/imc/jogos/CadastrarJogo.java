@@ -1,6 +1,6 @@
-package jogos;
+package br.unifei.imc.jogos;
 
-import arquivo.SalvaArquivo;
+import br.unifei.imc.arquivo.SalvaArquivo;
 
 import java.util.ArrayList;
 import java.util.List;

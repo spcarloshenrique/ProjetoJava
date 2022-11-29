@@ -1,7 +1,7 @@
-package arquivo;
+package br.unifei.imc.arquivo;
 
 import com.opencsv.CSVWriter;
-import jogos.Games;
+import br.unifei.imc.jogos.Games;
 
 import java.io.FileWriter;
 import java.io.IOException;

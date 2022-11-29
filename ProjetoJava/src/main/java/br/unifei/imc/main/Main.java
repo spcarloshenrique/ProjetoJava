@@ -1,13 +1,13 @@
-package main;
+package br.unifei.imc.main;
 
-import arquivo.LerArquivo;
-import jogos.CadastrarJogo;
-import jogos.Games;
-import jogos.JogoMultiplataforma;
-import vendas.Caixas;
-import vendas.JogoVendido;
-import vendas.VendaJogos;
-import vendas.VendaUnitaria;
+import br.unifei.imc.arquivo.LerArquivo;
+import br.unifei.imc.jogos.CadastrarJogo;
+import br.unifei.imc.jogos.Games;
+import br.unifei.imc.jogos.JogoMultiplataforma;
+import br.unifei.imc.vendas.Caixas;
+import br.unifei.imc.vendas.JogoVendido;
+import br.unifei.imc.vendas.VendaJogos;
+import br.unifei.imc.vendas.VendaUnitaria;
 
 import java.util.ArrayList;
 import java.util.List;

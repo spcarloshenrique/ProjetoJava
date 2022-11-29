@@ -1,4 +1,4 @@
-package vendas;
+package br.unifei.imc.vendas;
 
 import java.util.List;
 

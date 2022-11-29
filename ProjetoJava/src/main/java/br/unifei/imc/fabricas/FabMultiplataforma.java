@@ -1,4 +1,4 @@
-package fabricas;
+package br.unifei.imc.fabricas;
 
 public class FabMultiplataforma {
 }

@@ -1,7 +1,7 @@
-package fabricas;
+package br.unifei.imc.fabricas;
 
-import jogos.Jogo;
-import jogos.JogoXbox;
+import br.unifei.imc.jogos.Jogo;
+import br.unifei.imc.jogos.JogoXbox;
 
 
 public class FabricaJogosXbox implements FabricaDeJogo{
