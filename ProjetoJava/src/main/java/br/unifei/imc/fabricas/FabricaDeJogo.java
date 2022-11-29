@@ -2,8 +2,8 @@ package br.unifei.imc.fabricas;
 
 import br.unifei.imc.jogos.Jogo;
 
-public interface FabricaDeJogo {
+public abstract class FabricaDeJogo {
 
-    Jogo criaJogos();
+    abstract Jogo criaJogos();
 
 }

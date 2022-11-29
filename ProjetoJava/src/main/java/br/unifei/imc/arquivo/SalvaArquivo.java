@@ -1,7 +1,14 @@
 package br.unifei.imc.arquivo;
 
 import br.unifei.imc.jogos.Games;
+import com.opencsv.CSVWriter;
+import com.opencsv.bean.StatefulBeanToCsv;
+import com.opencsv.bean.StatefulBeanToCsvBuilder;
+import com.opencsv.exceptions.CsvDataTypeMismatchException;
+import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
 
+import java.io.IOException;
+import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -10,21 +17,18 @@ import java.util.List;
 
 public class SalvaArquivo {
 
-    public void salvaJogo(List<Games> jogos, String csv) {
-        CriaArquivo c = new CriaArquivo();
+    public void salvaJogo(Games jogo, String csv) throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
         if (Files.exists(Path.of(csv))) {
             List<Games> listaAtual = LerArquivo.readProdutoCsv(csv);
-            List<Games> novaLista = new ArrayList<>();
-            listaAtual.forEach(p -> {
-                novaLista.add(new Games(p.getNome(), p.getValor(), p.getDescricao(), p.getFabricante()));
-            });
-            jogos.forEach(p -> {
-                novaLista.add(new Games(p.getNome(), p.getValor(), p.getDescricao(), p.getFabricante()));
-            });
-            c.criaArquivo(novaLista,csv);
-        } else{
-            c.criaArquivo(jogos,csv);
+            listaAtual.add(jogo);
+            Writer writer = Files.newBufferedWriter(Paths.get(csv));
+            StatefulBeanToCsv<Games> beanToCsv = new StatefulBeanToCsvBuilder(writer).build();
+            beanToCsv.write(listaAtual);
+            writer.flush();
+            writer.close();
         }
+
+
 
     }
 }
